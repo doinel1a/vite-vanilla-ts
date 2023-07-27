@@ -60,45 +60,42 @@
     <noscript class="text-center text-lg text-red-500">
       Enable JavaScript to enjoy all the features of this app.
     </noscript>
-    <main
-      id="main"
-      class="text-color flex h-screen flex-col items-center justify-center bg-primary"
-    >
-      <header
-        class="absolute left-0 top-0 z-[1] w-full cursor-default bg-accent-primary sm:w-auto"
+
+    <nav class="fixed top-0 flex w-full justify-between">
+      <div
+        class="relative isolate flex w-full bg-accent-primary px-5 py-4 shadow-lg lg:w-auto"
       >
-        <div class="relative flex justify-center">
-          <h1
-            class="z-[1] select-none p-4 text-xl font-semibold sm:text-2xl md:text-3xl"
-          >
-            Vite Vanilla TypeScript — Template
-          </h1>
-          <div
-            class="arrow-right top absolute -right-[43px] -top-[35px] hidden h-0 w-0 rotate-90 border-b-[60px] border-t-[70px] border-b-transparent border-l-accent-primary border-t-transparent sm:-right-[40px] sm:block sm:border-l-[70px] md:-right-[43px] md:border-l-[76px]"
-          ></div>
-        </div>
-      </header>
-      <section
-        class="container flex h-72 w-96 flex-col items-center justify-between rounded-xl border border-tertiary bg-secondary py-10"
+        <h1
+          class="z-[1] text-xl font-semibold after:hidden sm:text-2xl md:text-3xl lg:after:block"
+        >
+          Vite Vanilla TypeScript — Template
+        </h1>
+        <div class="triangle"></div>
+      </div>
+    </nav>
+
+    <main class="flex h-full w-full items-center justify-center p-2">
+      <div
+        class="container flex h-72 w-96 flex-col items-center justify-between rounded-sm border border-tertiary bg-secondary py-10 shadow-lg"
       >
-        <h2 id="counter" class="text-6xl">0</h2>
+        <p id="counter" class="text-5xl font-semibold">0</p>
         <div class="flex gap-x-5">
           <button
             id="increment"
             type="button"
-            class="w-16 rounded-xl bg-accent-primary px-4 py-2 text-xl transition-colors hover:bg-accent-primary-state focus:bg-accent-primary-state"
+            class="w-16 rounded-sm bg-accent-primary px-4 py-2 text-xl shadow-md transition-colors hover:bg-accent-primary-state focus:bg-accent-primary-state"
           >
             + 1
           </button>
           <button
             id="decrement"
             type="button"
-            class="w-16 rounded-xl bg-accent-primary px-4 py-2 text-xl transition-colors hover:bg-accent-primary-state focus:bg-accent-primary-state"
+            class="w-16 rounded-sm bg-accent-primary px-4 py-2 text-xl shadow-md transition-colors hover:bg-accent-primary-state focus:bg-accent-primary-state"
           >
             - 1
           </button>
         </div>
-      </section>
+      </div>
       <a
         id="github"
         title="Get started on GitHub"
@@ -110,14 +107,7 @@
           width="80"
           height="80"
           viewBox="0 0 250 250"
-          style="
-            fill: var(--color);
-            color: var(--primary);
-            position: absolute;
-            top: 0;
-            border: 0;
-            right: 0;
-          "
+          class="absolute right-0 top-0 border-0 fill-color-light text-accent-primary lg:text-primary"
           aria-hidden="true"
         >
           <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -135,6 +125,21 @@
         </svg>
       </a>
     </main>
+
+    <footer
+      class="absolute bottom-0 flex w-full items-center justify-center border-t border-t-tertiary py-2"
+    >
+      <p>
+        by &nbsp;
+        <a
+          href="https://business-link.d1a.app"
+          class="text-lg text-accent-primary transition-colors hover:text-accent-primary-state focus:text-accent-primary-state"
+          >doinel1a</a
+        >
+        &nbsp; — &nbsp;
+        <span id="year">2023</span>
+      </p>
+    </footer>
   </body>
 
   <script type="module" src="src/ts/index.ts"></script>
