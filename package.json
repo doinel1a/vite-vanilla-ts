@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "author": {
+    "name": "Doinel Atanasiu",
+    "email": "doinel1atanasiu@gmail.com",
+    "url": "https://business-link.d1a.app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doinel1a/vite-vanilla-js"
+  },
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "npx husky install && npx playwright install",
+    "clean:dist": "npx rimraf dist",
+    "clean:report": "npx rimraf playwright-report",
+    "test:chrome": "npx playwright test --headed --project=chromium",
+    "test:firefox": "npx playwright test --headed --project=firefox",
+    "test:safari": "npx playwright test --headed --project=webkit",
+    "lint": "npx eslint --ext js ./src",
+    "lint:fix": "npx eslint --ext js ./src --fix",
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@builder.io/partytown": "^0.8.0",
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "@playwright/test": "^1.36.1",
+    "@vitejs/plugin-legacy": "^4.1.1",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sonarjs": "^0.19.0",
+    "eslint-plugin-unicorn": "^48.0.0",
+    "husky": "^8.0.3",
+    "postcss": "^8.4.27",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "sass": "^1.64.0",
+    "tailwindcss": "^3.3.3",
+    "terser": "^5.19.2",
+    "vite": "^4.4.6"
+  }
+}
