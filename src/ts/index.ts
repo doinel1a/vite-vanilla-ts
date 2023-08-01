@@ -4,7 +4,7 @@ import '../scss/global.scss';
 document.addEventListener('DOMContentLoaded', () => {
   const main = document.querySelector('main');
   const counter = main?.querySelector('#counter');
-  const yearContent = document.querySelector('#year');
+  const year = document.querySelector('#year');
 
   if (main && counter) {
     main.addEventListener('click', (event: MouseEvent) => {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  if (yearContent) {
-    yearContent.textContent = new Date().getFullYear().toString();
+  if (year) {
+    year.textContent = new Date().getFullYear().toString();
   }
 });
