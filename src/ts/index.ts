@@ -1,5 +1,5 @@
-import '../css/global.css';
-import '../scss/global.scss';
+import '../styles/global.scss';
+import '../styles/global.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   const main = document.querySelector('main');
