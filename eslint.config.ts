@@ -3,8 +3,8 @@ import prettierConfig from 'eslint-config-prettier/flat';
 import prettierPlugin from 'eslint-plugin-prettier/recommended';
 import sonarjs from 'eslint-plugin-sonarjs';
 import unicorn from 'eslint-plugin-unicorn';
-import globals from 'globals';
 import { defineConfig } from 'eslint/config';
+import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig([
