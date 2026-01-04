@@ -1,4 +1,3 @@
-/* eslint-disable unicorn/prefer-module */
 // @ts-check
 import { test } from '@playwright/test';
 
