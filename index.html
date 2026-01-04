@@ -60,54 +60,64 @@
     <noscript class="text-center text-lg text-red-500">
       Enable JavaScript to enjoy all the features of this app.
     </noscript>
-
-    <nav class="fixed top-0 flex w-full justify-between">
-      <div
-        class="relative isolate flex w-full bg-accent-primary px-5 py-4 shadow-lg lg:w-auto"
+    <main
+      id="main"
+      class="bg-primary text-color flex h-screen flex-col items-center justify-center"
+    >
+      <header
+        class="bg-accent-primary absolute top-0 left-0 z-1 w-full cursor-default sm:w-auto"
       >
-        <h1
-          class="z-[1] text-xl font-semibold after:hidden sm:text-2xl md:text-3xl lg:after:block"
-        >
-          Vite Vanilla TypeScript — Template
-        </h1>
-        <div class="triangle"></div>
-      </div>
-    </nav>
-
-    <main class="flex h-full w-full items-center justify-center p-2">
-      <div
-        class="container flex h-72 w-96 flex-col items-center justify-between rounded-sm border border-tertiary bg-secondary py-10 shadow-lg"
+        <div class="relative flex justify-center">
+          <h1
+            class="z-1 p-4 text-xl font-semibold select-none sm:text-2xl md:text-3xl"
+          >
+            Vite Vanilla JS — Template
+          </h1>
+          <div
+            class="arrow-right top border-l-accent-primary absolute -top-8.75 -right-10.75 hidden h-0 w-0 rotate-90 border-t-70 border-b-60 border-t-transparent border-b-transparent sm:-right-10 sm:block sm:border-l-70 md:-right-10.75 md:border-l-76"
+          ></div>
+        </div>
+      </header>
+      <section
+        class="border-tertiary bg-secondary container flex h-72 w-96 flex-col items-center justify-between rounded-xl border py-10"
       >
-        <p id="counter" class="text-5xl font-semibold">0</p>
+        <h2 id="counter" class="text-6xl">0</h2>
         <div class="flex gap-x-5">
           <button
             id="increment"
             type="button"
-            class="w-16 rounded-sm bg-accent-primary px-4 py-2 text-xl shadow-md transition-colors hover:bg-accent-primary-state focus:bg-accent-primary-state"
+            class="bg-accent-primary hover:bg-accent-primary-state focus:bg-accent-primary-state w-16 rounded-xl px-4 py-2 text-xl transition-colors"
           >
             + 1
           </button>
           <button
             id="decrement"
             type="button"
-            class="w-16 rounded-sm bg-accent-primary px-4 py-2 text-xl shadow-md transition-colors hover:bg-accent-primary-state focus:bg-accent-primary-state"
+            class="bg-accent-primary hover:bg-accent-primary-state focus:bg-accent-primary-state w-16 rounded-xl px-4 py-2 text-xl transition-colors"
           >
             - 1
           </button>
         </div>
-      </div>
+      </section>
       <a
         id="github"
         title="Get started on GitHub"
         aria-label="Get started on GitHub"
-        href="https://github.com/doinel1a/vite-vanilla-ts"
+        href="https://github.com/doinel1a/vite-vanilla-js"
         class="github-corner"
       >
         <svg
           width="80"
           height="80"
           viewBox="0 0 250 250"
-          class="absolute right-0 top-0 border-0 fill-color-light text-accent-primary lg:text-primary"
+          style="
+            fill: var(--color);
+            color: var(--primary);
+            position: absolute;
+            top: 0;
+            border: 0;
+            right: 0;
+          "
           aria-hidden="true"
         >
           <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -125,22 +135,8 @@
         </svg>
       </a>
     </main>
-
-    <footer
-      class="absolute bottom-0 flex w-full items-center justify-center border-t border-t-tertiary py-2"
-    >
-      <p>
-        by &nbsp;
-        <a
-          href="https://business-link.d1a.app"
-          class="text-lg text-accent-primary transition-colors hover:text-accent-primary-state focus:text-accent-primary-state"
-          >doinel1a</a
-        >
-        &nbsp; — &nbsp;
-        <span id="year">2023</span>
-      </p>
-    </footer>
   </body>
 
   <script type="module" src="src/ts/index.ts"></script>
 </html>
+
