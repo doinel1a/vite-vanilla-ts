@@ -2,3 +2,6 @@ onlyBuiltDependencies:
   - '@parcel/watcher'
   - core-js
   - esbuild
+
+blockExoticSubdeps: true
+minimumReleaseAge: 10080 # 7 days
